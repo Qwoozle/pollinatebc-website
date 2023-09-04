@@ -1,29 +1,17 @@
-    <script>
-        const homeLink = document.getElementById("home");
-        const aboutLink = document.getElementById("about");
-        const contactLink = document.getElementById("contact");
+<script>
+        const initiativesLink = document.getElementById("initiatives");
+        const leadersLink = document.getElementById("leaders");
 
-        const homeContent = document.getElementById("homeContent");
-        const aboutContent = document.getElementById("aboutContent");
-        const contactContent = document.getElementById("contactContent");
+        const initiativesContent = document.getElementById("initiativesContent");
+        const leadersContent = document.getElementById("leadersContent");
 
-        homeLink.addEventListener("click", () => {
-            homeContent.style.display = "block";
-            aboutContent.style.display = "none";
-            contactContent.style.display = "none";
+        initiativesLink.addEventListener("click", () => {
+            initiativesContent.style.display = "block";
+            leadersContent.style.display = "none";
         });
 
-        aboutLink.addEventListener("click", () => {
-            homeContent.style.display = "none";
-            aboutContent.style.display = "block";
-            contactContent.style.display = "none";
-        });
-
-        contactLink.addEventListener("click", () => {
-            homeContent.style.display = "none";
-            aboutContent.style.display = "none";
-            contactContent.style.display = "block";
+        leadersLink.addEventListener("click", () => {
+            initiativesContent.style.display = "none";
+            leadersContent.style.display = "block";
         });
     </script>
-</body>
-</html>
