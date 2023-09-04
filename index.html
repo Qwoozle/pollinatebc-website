@@ -3,28 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>One-Page Website</title>
+    <title>Pollinate BC</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #FFFFCC; /* Yellow background color */
         }
         header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
+            background-color: #FFD700; /* Gold header background color */
+            color: #000; /* Black text color */
+            padding: 20px;
             text-align: center;
         }
+        h1 {
+            font-size: 36px;
+        }
         nav {
-            background-color: #444;
+            background-color: #FFD700; /* Gold navigation bar background color */
             padding: 10px 0;
+            text-align: center;
         }
         nav ul {
             list-style: none;
             margin: 0;
             padding: 0;
-            text-align: center;
         }
         nav li {
             display: inline;
@@ -33,30 +37,39 @@
         .content {
             padding: 20px;
         }
+        .bee-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        /* Additional CSS for bee-themed design */
+        h2 {
+            color: #FFD700; /* Gold heading color */
+        }
+        p {
+            color: #333; /* Dark text color */
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>One-Page Website</h1>
+        <h1>Welcome to the Pollinate BC Website</h1>
     </header>
     <nav>
         <ul>
-            <li><a href="#" id="home">Home</a></li>
-            <li><a href="#" id="about">About</a></li>
-            <li><a href="#" id="contact">Contact</a></li>
+            <li><a href="#" id="initiatives">Our Initiatives</a></li>
+            <li><a href="#" id="leaders">Our Leaders</a></li>
         </ul>
     </nav>
     <div class="content">
-        <div id="homeContent">
-            <h2>Welcome to our website!</h2>
-            <p>This is the home page content.</p>
+        <div id="initiativesContent">
+            <h2>Our Initiatives</h2>
+            <p>Learn more about our initiatives to promote beekeeping and pollination.</p>
+            <img src="bee.jpg" alt="Bee" class="bee-image">
         </div>
-        <div id="aboutContent" style="display: none;">
-            <h2>About Us</h2>
-            <p>We are a passionate team dedicated to creating awesome websites.</p>
-        </div>
-        <div id="contactContent" style="display: none;">
-            <h2>Contact Us</h2>
-            <p>You can reach us at contact@example.com.</p>
+        <div id="leadersContent" style="display: none;">
+            <h2>Our Leaders</h2>
+            <p>Meet our team of dedicated beekeepers and experts.</p>
         </div>
     </div>
